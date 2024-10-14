@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+
+  <!-- Css Link -->
+   <link rel="stylesheet" href="blog.css">
+
+  
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/1f6bc03fc4.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon Link -->
+   <link rel="shortcut icon" href="images/featuer/f2.png" type="image/x-icon">
+
+</head>
+<body>
+   <!-- Header Section -->
+
+   <header class="header">
+    <span></span>
+
+    <div class="logo"><a href="index.html"><img src="images/other/logo.png" alt=""></a></div>
+  
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a  class="active" href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    
+  
+  </header>
+
+
+    <!-- Banner Gallery -->
+
+  <section >
+    <div class="blog">
+    <img src="images/banner/b17.jpg" alt="">
+    <div class="banner-box">
+      <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos illo corporis molestias, quas aspernatur a sit vero dolorem impedit! Maiores minus iusto debitis suscipit aspernatur expedita quos nemo amet excepturi</h5>
+      <div class="btn-container"><Button class="btn-2">Learn More</Button>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog">
+    <img src="images/banner/b16.jpg" alt="">
+    <div class="banner-box">
+      <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos illo corporis molestias, quas aspernatur a sit vero dolorem impedit! Maiores minus iusto debitis suscipit aspernatur expedita quos nemo amet excepturi</h5>
+      <div class="btn-container"><Button class="btn-2">Learn More</Button>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog">
+    <img src="images/banner/b18.jpg" alt="">
+    <div class="banner-box">
+      <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos illo corporis molestias, quas aspernatur a sit vero dolorem impedit! Maiores minus iusto debitis suscipit aspernatur expedita quos nemo amet excepturi</h5>
+      <div class="btn-container"><Button class="btn-2">Learn More</Button>
+      </div>
+    </div>
+  </div>
+
+  </section>
+  
+
+
+
+<!-- Footer  -->
+
+<section  id="footer-container">
+
+  <div id="container-1">
+<a href="index.html"><img src="images/other/logo.png"></a>
+<h3>Contact</h3>
+<div class="foot-1">
+<h4>
+  Address:
+<span>  Phase 7, Islamabad, Pakistan </span>
+</h4>
+<h4>
+  Phone:
+  <span>+92 302 000000000</span>
+</h4>
+<h4>
+  Hours:
+  <span> 12Am to 8Pm Monday to Friday </span>
+</h4>
+</div>
+<h3>Follow Us</h3>
+<div class="social">
+  <a href="#"><i class="fa-brands fa-youtube" style="color: #050505;"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter" style="color: #050505;"></i></a>
+  <a href="#"><i class="fa-brands fa-facebook" style="color: #050505;"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"  style="color: #050505;"></i></a>
+  <a href="#"><i class="fa-brands fa-tiktok"  style="color: #050505;"></i></a>
+</div>
+</div>
+
+<div class="container-2">
+  <h3>About</h3>
+  <div class="more-manu">
+    <h4>About Us</h4>
+    <h4>Information</h4>
+    <h4>Privacy Policy</h4>
+    <h4>Terms & Conditions</h4>
+    <h4>Contact Us</h4>
+  </div>
+</div>
+
+<div class="container-3">
+  <h3>Account</h3>
+  <div class="account">
+    <h4>Sign in</h4>
+    <h4>View Cart</h4>
+    <h4>My Website</h4>
+    <h4>Track My Order</h4>
+    <h4>Help</h4>
+  </div>
+</div>
+
+<div class="container-4">
+  <h3>Instal App</h3>
+  <div class="app">
+    <h4>From App Store & Google Play</h4>
+<div class="app-img">
+  <a href="#"><img src="images/pay/app.jpg" alt=""></a>
+  <a href="#"><img src="images/pay/play.jpg" alt=""></a>
+</div>
+    <h4>Secure Payment Gateway</h4>
+    <a href="#"><img class="payment" src="images/pay/pay.png" alt=""></a>
+  </div>
+</div>
+</section>
+
+<section id="copyright"><h6>© 2024 Copyright - Powered By Sk-Dev</h6></section>
+
+ <!-- Product Data js  -->
+
+ <script src="product data.js"></script>
+
+ <script>
+  function header() {
+  const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+  menuToggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    navMenu.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+  });
+
+// Close menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.header')) {
+    navMenu.classList.remove('active');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }});
+
+// Close menu when resizing to larger screen
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+    navMenu.classList.remove('active');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }});
+
+};
+header();
+
+ </script>
+
+</body>
+</html>

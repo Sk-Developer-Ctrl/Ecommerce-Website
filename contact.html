@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+
+  <!-- Css Link -->
+   <link rel="stylesheet" href="blog.css">
+
+  
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/1f6bc03fc4.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon Link -->
+   <link rel="shortcut icon" href="images/featuer/f2.png" type="image/x-icon">
+
+   <style>
+    /* Contact Section */
+
+    .contact{
+      text-align: center;
+    }
+
+
+.contact h2{
+    margin-bottom: 0rem;
+    
+}
+.contact form{
+    max-width: 70rem;
+    margin: 2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 12%;
+}
+.contact form  input {
+    width: 60%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background: #ffffff;
+    border-radius: .8rem;
+    margin: .5rem 0rem;
+    outline:none;
+    
+
+}
+.contact form input{
+    box-shadow: 2px 2px 5px   #76a4c6
+}
+.contact form input:focus{
+    box-shadow: none;
+    transition: 0.5s;
+}
+.contact form textarea{
+    width: 50%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background: #ffffff;
+    border-radius: .8rem;
+    margin: .5rem 2rem;
+    outline:none;
+    box-shadow: 2px 2px 5px   #76a4c6
+
+}
+.contact form textarea:focus{
+    box-shadow: none;
+    transition: 0.5s;
+}
+.contact form .btn {
+  background: #cc2e3b;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 20px;
+    border-radius: 6px;
+    outline: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+   </style>
+
+</head>
+<body>
+   <!-- Header Section -->
+
+   <header class="header">
+    <span></span>
+
+    <div class="logo"><a href="index.html"><img src="images/other/logo.png" alt=""></a></div>
+  
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  
+  </header>
+
+  <section class="contact">
+    <br id="contact">
+    <h2 class="heading">
+        Contact <span>Me</span>
+    </h2>
+    <h4>Leave your email and I will get back to you within 24 hours</h4>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+      <!-- Replace with your Access Key -->
+      <input type="hidden" name="access_key" value="2ddd27d5-9653-4554-9526-0113c58e5a46">
+  
+      <!-- Form Inputs. Each input must have a name="" attribute -->
+      <input type="text" name="name"  placeholder="Jone wick" required>
+      <input type="email" placeholder="info@Your-email" name="email" required>
+      <textarea name="message"  placeholder="Looking for a specific website" required></textarea>
+  
+      <!-- Honeypot Spam Protection -->
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+  
+      <!-- Custom Confirmation / Success Page -->
+      <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+  
+      <button type="submit" class="btn"><i class="fa-regular fa-share-from-square" style="color: #ffffff;"></i> Submit</button>
+  
+  </form>
+</section>
+
+  
+
+<!-- Footer  -->
+
+<section  id="footer-container">
+
+  <div id="container-1">
+<a href="index.html"><img src="images/other/logo.png"></a>
+<h3>Contact</h3>
+<div class="foot-1">
+<h4>
+  Address:
+<span>  Phase 7, Islamabad, Pakistan </span>
+</h4>
+<h4>
+  Phone:
+  <span>+92 302 000000000</span>
+</h4>
+<h4>
+  Hours:
+  <span> 12Am to 8Pm Monday to Friday </span>
+</h4>
+</div>
+<h3>Follow Us</h3>
+<div class="social">
+  <a href="#"><i class="fa-brands fa-youtube" style="color: #050505;"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter" style="color: #050505;"></i></a>
+  <a href="#"><i class="fa-brands fa-facebook" style="color: #050505;"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram"  style="color: #050505;"></i></a>
+  <a href="#"><i class="fa-brands fa-tiktok"  style="color: #050505;"></i></a>
+</div>
+</div>
+
+<div class="container-2">
+  <h3>About</h3>
+  <div class="more-manu">
+    <h4>About Us</h4>
+    <h4>Information</h4>
+    <h4>Privacy Policy</h4>
+    <h4>Terms & Conditions</h4>
+    <h4>Contact Us</h4>
+  </div>
+</div>
+
+<div class="container-3">
+  <h3>Account</h3>
+  <div class="account">
+    <h4>Sign in</h4>
+    <h4>View Cart</h4>
+    <h4>My Website</h4>
+    <h4>Track My Order</h4>
+    <h4>Help</h4>
+  </div>
+</div>
+
+<div class="container-4">
+  <h3>Instal App</h3>
+  <div class="app">
+    <h4>From App Store & Google Play</h4>
+<div class="app-img">
+  <a href="#"><img src="images/pay/app.jpg" alt=""></a>
+  <a href="#"><img src="images/pay/play.jpg" alt=""></a>
+</div>
+    <h4>Secure Payment Gateway</h4>
+    <a href="#"><img class="payment" src="images/pay/pay.png" alt=""></a>
+  </div>
+</div>
+</section>
+
+<section id="copyright"><h6>© 2024 Copyright - Powered By Sk-Dev</h6></section>
+
+ <!-- Product Data js  -->
+
+ <script src="product data.js"></script>
+
+ <script>
+  function header() {
+  const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+  menuToggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    navMenu.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+  });
+
+// Close menu when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.header')) {
+    navMenu.classList.remove('active');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }});
+
+// Close menu when resizing to larger screen
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+    navMenu.classList.remove('active');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }});
+
+};
+header();
+
+ </script>
+
+</body>
+</html>
